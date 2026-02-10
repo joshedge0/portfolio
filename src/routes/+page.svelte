@@ -227,28 +227,28 @@
 								<img
 									bind:this={coverImageExtras[0]}
 									class="pointer-events-none absolute top-0 left-0 z-[3] h-full w-full select-none object-cover"
-									src="/src/lib/assets/images/sunset.avif"
+									src="/images/sunset.avif"
 									loading="eager"
 									alt="Sunset"
 								/>
 								<img
 									bind:this={coverImageExtras[1]}
 									class="pointer-events-none absolute top-0 left-0 z-[2] h-full w-full select-none object-cover"
-									src="/src/lib/assets/images/beach.avif"
+									src="/images/beach.avif"
 									loading="eager"
 									alt="Beach"
 								/>
 								<img
 									bind:this={coverImageExtras[2]}
 									class="pointer-events-none absolute top-0 left-0 z-[1] h-full w-full select-none object-cover"
-									src="/src/lib/assets/images/jeep.avif"
+									src="/images/jeep.avif"
 									loading="eager"
 									alt="Jeep"
 								/>
 								<img
 									bind:this={coverImage}
 									class="pointer-events-none absolute top-0 left-0 h-full w-full select-none object-cover"
-									src="/src/lib/assets/images/heads.avif"
+									src="/images/heads.avif"
 									loading="eager"
 									alt="Mountains"
 									crossorigin="anonymous"
