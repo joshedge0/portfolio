@@ -67,7 +67,8 @@
 			period: '2018 - 2022',
 			responsibilities: [
 				'Configured and deployed IT infrastructure for clients, troubleshooting technical issues onsite and remotely',
-				'Maintained documentation and ticketing workflows for service requests'
+				'Maintained documentation and workflows for service requests',
+				'Resolved helpdesk support requests while tracking time and documenting solutions'
 			]
 		}
 	];
@@ -87,7 +88,7 @@
 	];
 
 	const skills: SkillCategory[] = [
-		{ category: 'Languages', skills: 'TypeScript/JavaScript, Python, Go, Java' },
+		{ category: 'Languages', skills: 'TypeScript/JavaScript, Python, Go, Java, SQL' },
 		{
 			category: 'Frontend',
 			skills: 'React, Next.js, Svelte/SvelteKit, Tailwind CSS'
@@ -357,7 +358,7 @@
 				{/each}
 			</section>
 
-			<!-- Projects Section -->
+			<!-- Projects Section 
 			<section bind:this={contentCards[2]} class="mb-8 translate-y-10 rounded-lg bg-[#f9f9f9] p-6 opacity-0 shadow-md transition-shadow duration-200 hover:shadow-lg">
 				<h2 class="mb-6 border-b-2 border-[#5c7837] pb-2 text-3xl font-bold text-slate-900">Projects</h2>
 
@@ -385,22 +386,10 @@
 					</div>
 				</a>
 			</section>
-
-			<!-- Technical Skills Section -->
-			<section bind:this={contentCards[3]} class="mb-8 translate-y-10 rounded-lg bg-[#f9f9f9] p-6 opacity-0 shadow-md transition-shadow duration-200 hover:shadow-lg">
-				<h2 class="mb-6 border-b-2 border-[#5c7837] pb-2 text-3xl font-bold text-slate-900">Technical Skills</h2>
-				<div class="grid gap-4">
-					{#each skills as skill}
-						<div class="px-4 text-slate-700">
-							<span class="font-semibold text-slate-900">{skill.category}:</span>
-							<span class="ml-2">{skill.skills}</span>
-						</div>
-					{/each}
-				</div>
-			</section>
+			-->
 
 			<!-- Education Section -->
-			<section bind:this={contentCards[4]} class="mb-8 translate-y-10 rounded-lg bg-[#f9f9f9] p-6 opacity-0 shadow-md transition-shadow duration-200 hover:shadow-lg">
+			<section bind:this={contentCards[2]} class="mb-8 translate-y-10 rounded-lg bg-[#f9f9f9] p-6 opacity-0 shadow-md transition-shadow duration-200 hover:shadow-lg">
 				<h2 class="mb-6 border-b-2 border-[#5c7837] pb-2 text-3xl font-bold text-slate-900">Education</h2>
 				{#each education as edu, i}
 					<div class={i < education.length - 1 ? 'mb-6' : ''}>
@@ -417,6 +406,21 @@
 					</div>
 				{/each}
 			</section>
+
+			<!-- Technical Skills Section -->
+			<section bind:this={contentCards[3]} class="mb-8 translate-y-10 rounded-lg bg-[#f9f9f9] p-6 opacity-0 shadow-md transition-shadow duration-200 hover:shadow-lg">
+				<h2 class="mb-6 border-b-2 border-[#5c7837] pb-2 text-3xl font-bold text-slate-900">Technical Skills</h2>
+				<div class="grid gap-4">
+					{#each skills as skill}
+						<div class="px-4 text-slate-700">
+							<span class="font-semibold text-slate-900">{skill.category}:</span>
+							<span class="ml-2">{skill.skills}</span>
+						</div>
+					{/each}
+				</div>
+			</section>
+
+			
 		</div>
 	</main>
 </div>
